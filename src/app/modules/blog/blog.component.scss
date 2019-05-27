@@ -1,0 +1,122 @@
+@import '../../../styles/common.scss';
+
+.blog-page {
+    .heading-advertise {
+        height: 10vh;
+        background-color: $ad-color;
+        margin-left: 30%;  
+        margin-right: 30%;  
+    }
+    &__container {
+        margin-top: 30px;
+        .heading-text {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.2;
+            padding-left: 1.5em;
+        }
+        .advertise {
+            background-color: $ad-color;
+        }
+        .lead {
+            padding-left: 6em;
+            color: rgba(0,0,0,.54);
+            fill: rgba(0,0,0,.54);
+            font-size: 16px;
+        }
+        .contents {
+            font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+            letter-spacing: .01rem;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 21px;
+            line-height: 1.58;
+            letter-spacing: -.003em;
+            > div {
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+            }
+            .main-heading {
+                font-size: 30px;
+                font-weight: 600;
+            }
+            .sub-heading {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .code-section {
+                background: rgba(0,0,0,.05);
+                padding: 20px;
+                white-space: pre-wrap;
+            }
+            .quote {
+                background-color: transparent !important;
+                font-size: 24px;
+                line-height: 1.4;
+                letter-spacing: -.005em;
+                font-family: medium-content-slab-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+                font-weight: 400;
+                font-style: italic;
+                padding-left: 20%;
+            }
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        &__container {
+            margin-top: 30px;
+            .heading-text {
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 1.2;
+                padding-left: 0.2em;
+                text-align: center;
+            }
+            .advertise {
+                background-color: $ad-color;
+            }
+            .lead {
+                font-size: 1rem;
+                padding-left: 0em;
+                text-align: center;
+            }
+            .contents {
+                font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+                letter-spacing: .01rem;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 18px;
+                line-height: 1.58;
+                letter-spacing: -.003em;
+                > div {
+                    display: block;
+                    margin-block-start: 0.75em;
+                    margin-block-end: 0.75em;
+                }
+                .main-heading {
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+                .sub-heading {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .code-section {
+                    background: rgba(0,0,0,.05);
+                    padding: 14px;
+                    white-space: pre-wrap;
+                }
+                .quote {
+                    background-color: transparent !important;
+                    font-size: 24px;
+                    line-height: 1.4;
+                    letter-spacing: -.005em;
+                    font-family: medium-content-slab-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    padding-left: 20%;
+                }
+            }
+        }
+    }
+}

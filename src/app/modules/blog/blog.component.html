@@ -1,0 +1,39 @@
+<div class="blog-page">
+  <div class="blog-page__container">
+    <div class="container">
+      <div class="ro">
+        <div class="col-12">
+          <div class="heading-text">
+            {{title}}
+          </div>
+          <p class="lead">
+            {{printDate(date)}}
+            &nbsp;-&nbsp;{{readTimeMin}} mins read
+          </p>
+        </div>
+        <div class="col-12 contents">
+          <ng-container *ngFor="let line of content">
+
+            <my-gist *ngIf="line.isGist && line.gist" [gistId]="username+'/'+line.gist"></my-gist>
+
+            <div *ngIf="line.isMainHeading" class="main-heading" [innerHtml]="line.html"></div>
+
+            <div *ngIf="line.isSubHeading" class="sub-heading" [innerHtml]="line.html"></div>
+
+            <div *ngIf="line.isQuoted" class="quote" [innerHtml]="line.html"></div>
+
+            <div *ngIf="line.isCodeSection" class="code-section" [innerHtml]="line.html"></div>
+
+            <div *ngIf="!line.isCodeSection && !line.isQuoted && !line.isGist && !line.isMainHeading && !line.isSubHeading" [innerHtml]="line.html"></div>
+
+          </ng-container>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

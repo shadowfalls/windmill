@@ -1,0 +1,27 @@
+<div class="blog-list">
+  <div class="blog-list__container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div *ngIf="catName" class="heading-text">
+            {{ catName }}
+          </div>
+          <p *ngIf="catName" class="lead">Availabel articles</p>
+        </div>
+        <ng-container *ngFor="let c of blogList">
+          <div class="col-xl-2 col-lg-3 col-md-2">
+          </div>
+          <div class="card-margin col-xl-8 col-lg-8 col-md-9 col-sm-11 col-11">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{c.blogName}}</h5>
+                <div class="details">{{ printDate(c) }}</div>
+                <a [routerLink]="[blogPage, c.blogId]">read more</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

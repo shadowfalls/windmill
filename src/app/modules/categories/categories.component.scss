@@ -1,0 +1,53 @@
+@import '../../../styles/common.scss';
+
+.categories-page {
+    .heading-advertise {
+        height: 10vh;
+        background-color: $ad-color;
+        margin-left: 30%;  
+        margin-right: 30%;  
+    }
+    &__container {
+        margin-top: 30px;
+        .heading-text {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.2;
+            padding-left: 1.5em;
+        }
+        .advertise {
+            background-color: $ad-color;
+        }
+        .lead {
+            padding-left: 4em;
+        }
+        .card-margin {
+            margin-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .card-title {
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        &__container {
+            margin-top: 30px;
+            .heading-text {
+                font-size: 3.5rem;
+                font-weight: 300;
+                line-height: 1.2;
+                padding-left: 0.2em;
+                text-align: center;
+            }
+            .advertise {
+                background-color: $ad-color;
+            }
+            .lead {
+                font-size: 1rem;
+                padding-left: 0em;
+                text-align: center;
+            }
+        }
+    }
+}

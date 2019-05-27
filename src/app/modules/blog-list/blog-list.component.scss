@@ -1,0 +1,59 @@
+@import '../../../styles/common.scss';
+
+.blog-list {
+    .heading-advertise {
+        height: 10vh;
+        background-color: $ad-color;
+        margin-left: 30%;  
+        margin-right: 30%;  
+    }
+    &__container {
+        margin-top: 30px;
+        .heading-text {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.2;
+            text-align: center;
+        }
+        .advertise {
+            background-color: $ad-color;
+        }
+        .lead {
+            text-align: center;
+        }
+        .card-margin {
+            margin-left: 1.5em;
+            margin-bottom: 1.5em;
+            .card {
+                border: none;
+                .details {
+                    color: rgba(0,0,0,.54);
+                    fill: rgba(0,0,0,.54);
+                    font-size: 16px;
+                }
+            }
+        }
+        .card-title {
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        &__container {
+            margin-top: 30px;
+            .heading-text {
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 1.2;
+                text-align: center;
+            }
+            .advertise {
+                background-color: $ad-color;
+            }
+            .lead {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

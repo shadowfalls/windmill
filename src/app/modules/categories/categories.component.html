@@ -1,0 +1,25 @@
+<div class="categories-page">
+  <div class="categories-page__container">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-xl-2 col-lg-2 col-md-2">
+          </div> -->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="heading-text">
+            Topics
+          </div>
+          <p class="lead">These are the available topics/categories of blogs that we have so far</p>
+        </div>
+        <div *ngFor="let c of categories" class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{c.catName}}</h5>
+              <a  [routerLink]="getUrl(c)">see blogs</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-xl-2 col-lg-2 col-md-2"></div> -->
+      </div>
+    </div>
+  </div>
+</div>

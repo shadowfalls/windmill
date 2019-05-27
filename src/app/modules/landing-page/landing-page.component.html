@@ -1,0 +1,25 @@
+<div class="landing-page">
+  <div class="landing-page__container">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-xl-2 col-lg-2 col-md-2">
+        </div> -->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="welcome-text">
+            Learn Web-technology
+          </div>
+          <p class="lead">We have blog articles for the following technologies</p>
+        </div>
+        <div *ngFor="let c of categories" class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{c.catName}}</h5>
+              <a  [routerLink]="getUrl(c)">see blogs</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-xl-2 col-lg-2 col-md-2"></div> -->
+      </div>
+    </div>
+  </div>
+</div>
