@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist/windmill/",
     "sitemap": "babel-node ./src/site-map/sitemap-generator.js",
     "predeploy": "yarn run build"
   },
@@ -26,6 +26,7 @@
     "core-js": "^2.5.4",
     "gh-pages": "^2.0.1",
     "jquery": "^3.4.1",
+    "ngx-disqus": "^2.4.3",
     "ngx-gist": "^1.0.4",
     "popper": "^1.0.1",
     "rxjs": "~6.3.3",

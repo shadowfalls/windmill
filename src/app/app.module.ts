@@ -12,6 +12,7 @@ import { BlogListComponent } from './modules/blog-list/blog-list.component';
 import { BlogComponent } from './modules/blog/blog.component';
 import { AboutComponent } from './modules/about/about.component';
 import { MyGist } from './modules/shared/gist.component';
+import { DisqusModule } from "ngx-disqus";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MyGist } from './modules/shared/gist.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxGistModule
+    NgxGistModule,
+    DisqusModule.forRoot('disqus_shortname')
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

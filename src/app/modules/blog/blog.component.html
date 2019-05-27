@@ -24,14 +24,18 @@
 
             <div *ngIf="line.isCodeSection" class="code-section" [innerHtml]="line.html"></div>
 
-            <div *ngIf="!line.isCodeSection && !line.isQuoted && !line.isGist && !line.isMainHeading && !line.isSubHeading" [innerHtml]="line.html"></div>
+            <div *ngIf="!line.isCodeSection && !line.isQuoted && !line.isGist && !line.isMainHeading && !line.isSubHeading"
+              [innerHtml]="line.html"></div>
 
           </ng-container>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-
+          <disqus
+          [title]="title"
+          [identifier]="id">
+          </disqus>
         </div>
       </div>
     </div>
